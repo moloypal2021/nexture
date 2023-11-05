@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         dark: {
           1: "#161616",
+          2: "#393939",
+          3: "#2d3f49",
         },
         gray: {
           1: "#f3f3f3",
@@ -16,6 +18,9 @@ module.exports = {
         },
         blue: {
           1: "#0f62fe",
+        },
+        teal: {
+          1: "#394b54",
         },
       },
       fontFamily: {

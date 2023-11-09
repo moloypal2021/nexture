@@ -25,10 +25,20 @@ module.exports = {
         blue: {
           1: "#0f62fe",
           2: "#0062ff",
+          3: "#2d4691",
+          4: "#28285f",
+          5: "#002063",
         },
         teal: {
           1: "#394b54",
+          2: "#375668",
+          3: "#188d6d",
+          4: "#55be9b",
         },
+      },
+      boxShadow: {
+        1: "0 2px 24px 0 rgba(0,0,0,.15)",
+        2: "0 2px 100px 0 rgba(0,0,0,.25)",
       },
       fontFamily: {
         ibm: ["IBM Plex Sans", "sans-serif"],

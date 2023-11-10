@@ -39,6 +39,10 @@ module.exports = {
       boxShadow: {
         1: "0 2px 24px 0 rgba(0,0,0,.15)",
         2: "0 2px 100px 0 rgba(0,0,0,.25)",
+        3: "0 2px 24px 0 rgba(0,0,0,.2)",
+      },
+      backgroundImage: {
+        1: "linear-gradient(90deg,#28285f,#188d6d)",
       },
       fontFamily: {
         ibm: ["IBM Plex Sans", "sans-serif"],

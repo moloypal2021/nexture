@@ -21,6 +21,7 @@ module.exports = {
           4: "#f4f4f4",
           5: "#e0e0e0",
           6: "#D8D8D8",
+          7: "#f1f1f1",
         },
         blue: {
           1: "#0f62fe",

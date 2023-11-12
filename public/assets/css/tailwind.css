@@ -1774,6 +1774,11 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-teal-2:hover{
+  --tw-text-opacity: 1;
+  color: rgb(55 86 104 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -1806,6 +1811,16 @@ body{
 .group:hover .group-hover\:bg-gray-4{
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-teal-3{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 141 109 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-teal-4{
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 190 155 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:shadow-2{

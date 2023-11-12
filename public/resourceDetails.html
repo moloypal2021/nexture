@@ -13,8 +13,18 @@
 
 <body>
     <div class="bg-gray-1">
-        <section class="pb-12 mt-20 mb-20 bg-white">
-            <div class="container mx-auto w-full max-w-[1386px] px-4 lg:px-8">
+        <section class="pb-12 mb-20 bg-white">
+            <div class="container mx-auto w-full max-w-[1386px] px-4 lg:px-8 relative pt-20">
+                <button
+                    class="absolute top-0 right-0 flex items-center justify-center gap-3 px-12 py-4 text-sm font-bold text-white uppercase transition-all bg-blue-4 hover:text-teal-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-share" viewBox="0 0 16 16">
+                        <path
+                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                    </svg>
+                    <span>share</span>
+                </button>
+
                 <div class="flex items-center gap-1 mb-6">
                     <a href="#"
                         class="flex items-center px-2 text-sm/6 font-semibold text-white rounded bg-blue-3 border-blue-3 gap-1.5">
@@ -99,18 +109,19 @@
                 <div class="grid gap-3 lg:grid-cols-12">
                     <div
                         class="flex flex-wrap justify-center md:gap-0 lg:gap-6 lg:grid lg:grid-cols-3 lg:col-start-3 lg:col-span-9">
-                        <div class="flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0">
+                        <div class="relative flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0 group">
+                            <a href="#" class="absolute inset-0 z-10"></a>
                             <h2 class="mb-10 text-3xl font-bold text-blue-3">Energy storage</h2>
 
                             <div class="relative aspect-[16/10] pb-8 bg-1">
                                 <img src="./assets/images/lifsi_mockup_3.jpg" alt="" class="object-cover w-full h-full">
 
                                 <div
-                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3">
+                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3 group-hover:bg-teal-3 transition-all">
                                     <span>
                                         Visit our Renewable energy and energy storage page</span>
                                     <span
-                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 bg-blue-3">
+                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 transition-all bg-blue-3 group-hover:bg-teal-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -121,18 +132,19 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0">
+                        <div class="relative flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0 group">
+                            <a href="#" class="absolute inset-0 z-10"></a>
                             <h2 class="mb-10 text-3xl font-bold text-blue-3">Battery Materials</h2>
 
                             <div class="relative aspect-[16/10] pb-8 bg-1">
                                 <img src="./assets/images/lifsi_mockup_3.jpg" alt="" class="object-cover w-full h-full">
 
                                 <div
-                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3">
+                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3 group-hover:bg-teal-3 transition-all">
                                     <span>
                                         Visit our Battery Materials page</span>
                                     <span
-                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 bg-blue-3">
+                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 transition-all bg-blue-3 group-hover:bg-teal-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -143,7 +155,8 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0">
+                        <div class="relative flex flex-col justify-between w-1/2 p-3 lg:w-auto lg:p-0 group">
+                            <a href="#" class="absolute inset-0 z-10"></a>
                             <h2 class="mb-10 text-3xl font-bold text-blue-3"><strong>Foranext<sup>®</sup>&nbsp;LiFSI and
                                     LiTDI for lithium-ion batteries</strong></h2>
 
@@ -151,11 +164,11 @@
                                 <img src="./assets/images/lifsi_mockup_3.jpg" alt="" class="object-cover w-full h-full">
 
                                 <div
-                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3">
+                                    class="absolute inset-x-0 top-0 py-3.5 pl-3.5 pr-16 text-sm font-bold text-center text-white uppercase bg-blue-4 shadow-3 group-hover:bg-teal-3 transition-all">
                                     <span>
                                         Visit our Foranext® LiFSI and LiTDI page</span>
                                     <span
-                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 bg-blue-3">
+                                        class="absolute inset-y-0 right-0 flex items-center justify-center w-12 transition-all bg-blue-3 group-hover:bg-teal-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"

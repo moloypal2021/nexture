@@ -13,9 +13,10 @@
 
 <body>
 
-    <section class="relative container mx-auto w-full max-w-[1584px]">
+    <!-- Content Start -->
+    <section class="relative container mx-auto w-full max-w-[1584px] px-5 lg:px-8">
         <div class="grid lg:grid-cols-12">
-            <div class=" lg:col-span-3 xl:col-span-2">
+            <div class="hidden lg:col-span-2 lg:block">
                 <div class="pb-12 pr-4 mt-8 border-b border-gray-8 ">
                     <ol>
                         <li>
@@ -110,11 +111,11 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-9 xl:col-span-10">
-                <div class="grid xl:grid-cols-12">
-                    <div class="xl:col-start-3 xl:col-span-9">
+            <div class="lg:col-span-10">
+                <div class="grid lg:grid-cols-12">
+                    <div class="lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-10">
                         <div class="py-4 mt-32 border-t border-gray-8">
-                            <div class="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-4 xl:grid-cols-3">
+                            <div class="grid grid-cols-2 gap-3 lg:grid-cols-2 md:grid-cols-4 xl:grid-cols-3">
                                 <div class="lg:hidden">
                                     <div class="flex items-center space-x-3">
                                         <svg focusable="false" preserveAspectRatio="xMidYMid meet"
@@ -158,8 +159,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-12 xl:col-start-3 xl:col-span-7 xl:pr-12">
-                        <h1 class="block mt-16 mb-12 text-2xl font-medium md:mb-16 text-dark-9 md:text-42/50">COBOL
+
+                    <div class="mb-12 lg:col-start-2 xl:col-start-3 lg:col-span-8 xl:col-span-7">
+                        <h1 class="block mt-16 mb-12 font-medium md:mb-16 text-dark-9 text-42/50">COBOL
                             programmers are getting harder to find. IBM’s code-writing AI can help</h1>
 
                         <p class="text-xl md:text-2xl text-dark-9">IBM’s new modernization solution, <a href="#"
@@ -168,15 +170,461 @@
                             IBM Z and the hybrid cloud.</p>
                     </div>
 
-                    <div class="xl:col-start-3 xl:col-span-9">
-                        <img src="./assets/images/img-4.jpeg" alt="" class="w-full">
+                    <div class="mb-16 lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-10">
+                        <img src="./assets/images/img-4.jpeg" alt="" class="w-full lg:mb-12">
 
+                        <div class="grid py-8 sm:gap-12 sm:grid-cols-2 lg:hidden">
+                            <div class="py-4 pr-4 mt-4 border-t border-gray-8 ">
+                                <h6 class="mb-2 text-sm font-semibold text-black">Authors</h6>
 
+                                <ul class="flex flex-wrap gap-2">
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-blue-6 bg-blue-7 hover:bg-blue-8 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Kim Martineau</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 pr-4 mt-4 border-t border-gray-8 ">
+                                <h6 class="mb-2 text-sm font-semibold text-black">Topics</h6>
+
+                                <ul class="flex flex-wrap gap-2">
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>AI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>AI for Code</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-8 lg:grid-cols-12">
+                            <div class="order-2 lg:col-span-8 xl:col-span-9 xl:pr-8 lg:order-1">
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">COBOL, the first programming language
+                                    for business, helped build the modern software industry. Six decades later,
+                                    COBOL-powered mainframes now process an estimated 70% of banking transactions
+                                    globally.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">COBOL, the first programming language
+                                    for business, helped build the modern software industry. Six decades later,
+                                    COBOL-powered mainframes now process an estimated 70% of banking transactions
+                                    globally.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">As enterprises look to modernize, they
+                                    are looking for skilled developers that can understand mainframe applications, and
+                                    use tools designed specifically to break up and transform complex, large mainframe
+                                    applications.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">To simplify the mainframe modernization
+                                    journey, IBM has developed <a href="#" class="text-blue-1 hover:underline">watsonx
+                                        Code Assistant for IBM Z</a>, a solution powered by automated tooling and IBM’s
+                                    20-billion parameter “<a href="#" class="text-blue-1 hover:underline">Granite</a>”
+                                    large language model for code that allows enterprises to transform monolithic COBOL
+                                    applications into services optimized for IBM Z.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">Enterprises can selectively modernize
+                                    applications with the greatest return and integrate them with existing services to
+                                    maintain IBM Z’s high performance. IBM will make this solution available to
+                                    customers on Thursday, October 26.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">“Generative AI can make modernization
+                                    less overwhelming for enterprises,” said Ruchir Puri, chief scientist at IBM
+                                    Research. “Watsonx Code Assistant for Z can help companies selectively and
+                                    incrementally refactor business services in COBOL, prioritizing tasks with the
+                                    greatest payoff first.”.</p>
+
+                                <h2 class="mt-20 text-2xl font-medium text-dark-9 mb-7">Modernization in less time, at
+                                    lower cost</h2>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">Application modernization can be
+                                    slow-going and risky, especially for banks and governments that provide
+                                    mission-critical services. Large applications have interdependent features that have
+                                    been repeatedly updated over the years. Disentangling them into stand-alone services
+                                    can be complex and time-consuming. And once refactoring is complete, developers face
+                                    the additional hurdle of translating those services from COBOL to Java.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">IBM watsonx Code Assistant for Z has
+                                    several capabilities designed to save developers time and reduce the chance of
+                                    mistakes. An application discovery tool analyzes the application and maps out its
+                                    dependencies, giving developers a high-level understanding of how the code works. An
+                                    automated refactoring tool takes this information and helps developers identify the
+                                    business services they want to extract and refactor. Metadata collected during these
+                                    first two steps provides critical context for a third capability, powered by
+                                    generative AI, if the client chooses.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">A large language model (LLM), trained
+                                    on the world’s programming languages and tuned on pairs of COBOL-Java programs for
+                                    IBM Z, takes the refactored COBOL program and translates it to Java. An automated
+                                    unit-testing tool, to be released later, will allow developers to quickly test and
+                                    validate the newly transformed Java code.</p>
+
+                                <p class="mb-6 text-base lg:text-xl text-dark-9">The solution is designed to operate
+                                    with the full suite of Z/OS applications and environments.
+
+                                </p>
+                            </div>
+
+                            <div class="order-1 lg:col-span-4 xl:col-span-3 lg:order-2">
+                                <div class="p-4 bg-gray-10">
+                                    <p class="text-base text-dark-9">
+                                        Learn more about <a href="#" class="text-blue-1 hover:underline">watsonx Code
+                                            Assistant</a> and IBM Research’s <a href="#"
+                                            class="text-blue-1 hover:underline">AI for code work.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" lg:col-span-9">
+                        <iframe frameborder="0" allowfullscreen="" class="w-full h-full aspect-video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            title="Generative AI-assisted mainframe application modernization" width="640" height="360"
+                            src="https://www.youtube.com/embed/bLOcdyFZN0k?enablejsapi=1&amp;origin=https%3A%2F%2Fresearch.ibm.com&amp;widgetid=1"
+                            id="widget2"></iframe>
+                    </div>
+
+                    <div class="lg:col-span-3 lg:pl-12">
+                        <p class="text-sm text-right text-dark-9 font-ibm-serif lg:text-left">Generative AI-assisted
+                            mainframe application modernization</p>
+                    </div>
+
+                    <div class="mt-16 mb-16 lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-7">
+                        <h2 class="text-2xl font-medium mb-7 text-dark-1">High-quality, ‘JOBOL’-free code</h2>
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">IBM trained the base model on open-source code
+                            repositories like GitHub, after extensive filtering for toxic, sensitive, or
+                            copyright-protected code. In total, more than 1.6 trillion code tokens (words and parts of
+                            words) went into training the base Granite model. To strengthen the model’s understanding of
+                            COBOL and Java, it was fine-tuned on thousands of pairs of enterprise programs in both
+                            languages. Critical gaps were filled in with AI-generated synthetic code.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">When comparing between watsonx Code Assistant
+                            for IBM Z and ChatGPT (OpenAI’s LLM-powered chatbot), IBM researchers found that WCA for Z
+                            outperformed ChatGPT on COBOL translation.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">Several factors explain the IBM Granite model’s
+                            high performance:</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">The first is the quality of the data used to
+                            tune and customize the model. IBM programmers fluent in COBOL and Java worked side-by-side
+                            to create thousands of pairs of functionally equivalent programs for IBM Z.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">It turns out that translating code literally,
+                            line-by-line, works about as well for programs as it does for natural language. Translate
+                            COBOL to Java this way and you get ‘JOBOL,’ code that’s difficult to read and maintain. IBM
+                            programmers worked carefully to ensure that the syntax of each COBOL program was expressed
+                            correctly in Java.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">“We know Cobol and Java on z/OS better than
+                            anyone,” said Richard Larin, product lead for IBM watsonx Code Assistant for Z. “We’re
+                            imparting that knowledge to our large language model so it knows how to handle our
+                            customers’ use cases.”</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">Sometimes that means keeping a microservice in
+                            COBOL, and not translating it to Java. “It can mix and match,” Puri said. “Since IBM Z
+                            supports the efficient deployment of both COBOL and Java applications, it can offer
+                            high-performance, resilience, and security for modernized applications in either language.”
+                        </p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">The model’s second comparative advantage is the
+                            size of its training data: 1.6 trillion tokens of code compared to less than 1 trillion
+                            tokens for most code-only models on the market. The more code tokens a model ingests, the
+                            better it typically performs on a variety of coding tasks.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">The model’s third advantage is the length of
+                            its context window, which is the number of tokens that can be squeezed into the user’s
+                            prompt. The model’s 32,000-token context window allows it to better capture the complexities
+                            of both applications.</p>
+
+                        <h2 class="mt-16 text-2xl font-medium mb-7 text-dark-1">Modernizing software stacks with AI
+                        </h2>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">The watsonx Code Assistant solution for Z is
+                            IBM’s latest effort to modernize code with the help of foundation models, AI models
+                            pre-trained on datasets the size of the internet that can be redeployed for many tasks.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">In 2021, IBM Research launched Project CodeNet,
+                            a dataset aimed at teaching AI systems how to program, which was cited as a source for Deep
+                            Mind’s AlphaCode project. Project CodeNet was followed by Project Wisdom for Red Hat
+                            Ansible, an effort to use code-writing AI models to build IT automations in plain English.
+                        </p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">This work also underlies watsonx Code Assistant
+                            for Red Hat Ansible Lightspeed, an AI service that streamlines Ansible code-writing to help
+                            enterprises accelerate IT automation across the business. The solution is currently in tech
+                            preview.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">So far, IBM Consulting has cut the time it
+                            takes to generate Ansible playbooks for automating IT workflows by 30%.</p>
+                    </div>
+
+                    <div class="mb-16 lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-10">
+                        <a href="#" class="flex items-start justify-between group">
+                            <div class="py-3 border-t-2 sm:w-6/12 lg:w-9/12 border-blue-1 text-blue-1 hover:underline">
+                                <div class="text-xl font-medium lg:w-7/12 lg:text-2xl ">Subscribe to our Future
+                                    Forward newsletter and stay up to date on the latest research news</div>
+
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="mt-6"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                    viewBox="0 0 32 32" aria-hidden="true" class="Ptkl_">
+                                    <path
+                                        d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="w-[120px] lg:w-[180px] h-[120px] lg:h-[180px] bg-blue-1 rounded-full hidden sm:flex items-center justify-center text-sm text-center lg:text-base text-white rotate-[15deg] group-hover:rotate-0 transition-all shrink-0">
+                                <span>Subscribe to our newsletter</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Post Lsit -->
+
+    <div class="border-t border-gray-8">
+        <div class="container mx-auto w-full max-w-[1584px]">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4">
+                <div
+                    class="flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[510px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+                    <div class="w-full aspect-[16/9]">
+                        <img src="./assets/images/img-3.jpeg" alt="" class="w-full h-full mb-3">
+                    </div>
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden sm:flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[510px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+                    <div class="w-full aspect-[16/9]">
+                        <img src="./assets/images/img-3.jpeg" alt="" class="w-full h-full mb-3">
+                    </div>
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden lg:flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[510px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+                    <div class="w-full aspect-[16/9]">
+                        <img src="./assets/images/img-3.jpeg" alt="" class="w-full h-full mb-3">
+                    </div>
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden lg:flex flex-col items-start p-5 lg:p-8 group  min-h-[510px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+                    <div class="w-full aspect-[16/9]">
+                        <img src="./assets/images/img-3.jpeg" alt="" class="w-full h-full mb-3">
+                    </div>
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black">
+            <div class="container mx-auto w-full max-w-[1584px] px-">
+                <div class="grid grid-cols-2 xl:grid-cols-4">
+                    <div class="">
+                        <button
+                            class="flex items-start w-full gap-2 p-4 text-left text-white border-r lg:px-8 hover:bg-dark-10 hover:ring-2 hover:ring-blue-1 border-gray-8">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="w-8 shrink-0"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z">
+                                </path>
+                            </svg>
+                            <div class="">
+                                <span class="text-2xl group-hover:underline">Previous</span>
+                                <p class="hidden text-sm text-white sm:block">Resolving the first anti-aromatic carbon
+                                    allotrope</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="xl:col-start-4">
+                        <button
+                            class="flex items-start w-full gap-2 p-4 text-left text-white border-l lg:px-8 hover:bg-dark-10 hover:ring-2 hover:ring-blue-1 border-gray-8">
+
+                            <div class="">
+                                <span class="text-2xl group-hover:underline">Next</span>
+                                <p class="hidden text-sm text-white sm:block">You need 100 qubits to accelerate
+                                    discovery with quantum
+                                </p>
+                            </div>
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="w-8 ml-auto shrink-0"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Collapse

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!-- Content Start -->
+    <section class="relative container mx-auto w-full max-w-[1584px] px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12">
+            <div class="hidden lg:col-span-2 lg:block">
+                <div class="pb-12 pr-4 mt-8 border-b border-gray-8 ">
+                    <ol>
+                        <li>
+                            <a class="text-sm text-blue-1 hover:underline" href="#">Home</a>
+                        </li>
+                        <li>
+                            <span class="text-sm" aria-hidden="true">
+                                ↳
+                            </span>
+                            <a class="text-sm text-blue-1 hover:underline" href="#">Blog</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="pb-12 pr-4 mt-4 border-b border-gray-8 ">
+                    <h6 class="mb-2 text-sm font-semibold text-black">Date</h6>
+                    <p class="text-sm text-black">26 Oct 2023</p>
+                </div>
+
+                <div class="pb-12 pr-4 mt-4 border-b border-gray-8 ">
+                    <h6 class="mb-2 text-sm font-semibold text-black">Authors</h6>
+
+                    <ul class="mb-8 space-y-2">
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Hans Liljestrand</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-blue-6 bg-blue-7 hover:bg-blue-8 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Kim Martineau</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Matthew Hicks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>N. Asokan</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Danfeng (Daphne) Yao</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-blue-6 bg-blue-7 hover:bg-blue-8 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Salman Ahmed</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="flex items-center space-x-1">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" role="presentation">
+                            <circle cx="8" cy="8" r="8" fill="#edf5ff"></circle>
+                            <circle cx="8" cy="8" r="2" fill="#0f62fe"></circle>
+                        </svg>
+
+                        <span class="text-xs italic text-dark-11">IBM-affiliated at time of publication</span>
+                    </div>
+
+                </div>
+
+                <div class="pb-12 pr-4 mt-4 border-b border-gray-8 ">
+                    <h6 class="mb-2 text-sm font-semibold text-black">Topics</h6>
+
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Security</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                <span>Security Analysis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="pb-12 pr-4 mt-4">
+                    <h6 class="mb-2 text-sm font-semibold text-black">Share</h6>
+
+                    <ul class="flex gap-4">
+                        <li>
+                            <a href="#" class="text-black hover:text-blue-1">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="32"
+                                    height="32" viewBox="0 0 32 32">
+                                    <path
+                                        d="M26.67,4H5.33A1.34,1.34,0,0,0,4,5.33V26.67A1.34,1.34,0,0,0,5.33,28H16.82V18.72H13.7V15.09h3.12V12.42c0-3.1,1.89-4.79,4.67-4.79.93,0,1.86,0,2.79.14V11H22.37c-1.51,0-1.8.72-1.8,1.77v2.31h3.6l-.47,3.63H20.57V28h6.1A1.34,1.34,0,0,0,28,26.67V5.33A1.34,1.34,0,0,0,26.67,4Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-black hover:text-blue-1">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="32"
+                                    height="32" viewBox="0 0 32 32">
+                                    <path
+                                        d="M11.92,24.94A12.76,12.76,0,0,0,24.76,12.1c0-.2,0-.39,0-.59A9.4,9.4,0,0,0,27,9.18a9.31,9.31,0,0,1-2.59.71,4.56,4.56,0,0,0,2-2.5,8.89,8.89,0,0,1-2.86,1.1,4.52,4.52,0,0,0-7.7,4.11,12.79,12.79,0,0,1-9.3-4.71,4.51,4.51,0,0,0,1.4,6,4.47,4.47,0,0,1-2-.56v.05A4.53,4.53,0,0,0,9.5,17.83a4.53,4.53,0,0,1-2,.08A4.51,4.51,0,0,0,11.68,21,9.05,9.05,0,0,1,6.07,23,9.77,9.77,0,0,1,5,22.91a12.77,12.77,0,0,0,6.92,2">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-black hover:text-blue-1">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="32"
+                                    height="32" viewBox="0 0 32 32">
+                                    <path
+                                        d="M26.2,4H5.8C4.8,4,4,4.8,4,5.7v20.5c0,0.9,0.8,1.7,1.8,1.7h20.4c1,0,1.8-0.8,1.8-1.7V5.7C28,4.8,27.2,4,26.2,4z M11.1,24.4	H7.6V13h3.5V24.4z M9.4,11.4c-1.1,0-2.1-0.9-2.1-2.1c0-1.2,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1S10.5,11.4,9.4,11.4z M24.5,24.3	H21v-5.6c0-1.3,0-3.1-1.9-3.1c-1.9,0-2.1,1.5-2.1,2.9v5.7h-3.5V13h3.3v1.5h0.1c0.5-0.9,1.7-1.9,3.4-1.9c3.6,0,4.3,2.4,4.3,5.5V24.3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lg:col-span-10">
+                <div class="grid lg:grid-cols-12">
+                    <div class="lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-10">
+                        <div class="py-4 mt-32 border-t border-gray-8">
+                            <div class="grid grid-cols-2 gap-3 lg:grid-cols-2 md:grid-cols-4 xl:grid-cols-3">
+                                <div class="lg:hidden">
+                                    <div class="flex items-center space-x-3">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24"
+                                            height="24" viewBox="0 0 32 32" aria-hidden="true">
+                                            <path
+                                                d="M26,4h-4V2h-2v2h-8V2h-2v2H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V6C28,4.9,27.1,4,26,4z M26,26H6V12h20	V26z M26,10H6V6h4v2h2V6h8v2h2V6h4V10z">
+                                            </path>
+                                        </svg>
+                                        <span class="text-base text-black">26 Oct 2023</span>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="flex items-center space-x-3">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24"
+                                            height="24" viewBox="0 0 32 32" aria-hidden="true">
+                                            <path
+                                                d="M29.707,19.293l-3-3a.9994.9994,0,0,0-1.414,0L16,25.5859V30h4.4141l9.2929-9.293A.9994.9994,0,0,0,29.707,19.293ZM19.5859,28H18V26.4141l5-5L24.5859,23ZM26,21.5859,24.4141,20,26,18.4141,27.5859,20Z">
+                                            </path>
+                                            <path d="M17 15H21V17H17z" transform="rotate(-90 19 16)"></path>
+                                            <path d="M12 14H18V16H12z" transform="rotate(-90 15 15)"></path>
+                                            <path d="M6 12H16V14H6z" transform="rotate(-90 11 13)"></path>
+                                            <path
+                                                d="M12,30H6a2.0021,2.0021,0,0,1-2-2V4A2.0021,2.0021,0,0,1,6,2H22a2.0021,2.0021,0,0,1,2,2V14H22V4H6V28h6Z">
+                                            </path>
+                                        </svg>
+                                        <span class="text-base text-black">Technical note</span>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="flex items-center space-x-3">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24"
+                                            height="24" viewBox="0 0 32 32" aria-hidden="true">
+                                            <path
+                                                d="M16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30ZM16,4A12,12,0,1,0,28,16,12,12,0,0,0,16,4Z">
+                                            </path>
+                                            <path d="M20.59 22L15 16.41 15 7 17 7 17 15.58 22 20.59 20.59 22z"></path>
+                                        </svg>
+                                        <span class="text-base text-black">4 minute read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-12 lg:col-start-2 xl:col-start-3 lg:col-span-8 xl:col-span-7">
+                        <h1 class="block mt-16 mb-6 font-medium md:mb-16 text-dark-9 text-42/50">Protection against
+                            data-oriented attacks through selective data integrity</h1>
+
+                        <div class="grid mb-8 lg:hidden sm:grid-cols-2 gap-x-12">
+                            <div class="pt-4 pb-4 pr-4 mt-4 border-t border-gray-8 ">
+                                <h6 class="mb-2 text-sm font-semibold text-black">Authors</h6>
+
+                                <ul class="flex flex-wrap gap-2 mb-8">
+                                    <li>
+                                        <a href=" #"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Hans Liljestrand</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-blue-6 bg-blue-7 hover:bg-blue-8 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Kim Martineau</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Matthew Hicks</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>N. Asokan</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-dark-2 bg-gray-5 hover:bg-gray-11 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Danfeng (Daphne) Yao</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-blue-6 bg-blue-7 hover:bg-blue-8 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Salman Ahmed</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="flex items-center space-x-1">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" role="presentation">
+                                        <circle cx="8" cy="8" r="8" fill="#edf5ff"></circle>
+                                        <circle cx="8" cy="8" r="2" fill="#0f62fe"></circle>
+                                    </svg>
+
+                                    <span class="text-xs italic text-dark-11">IBM-affiliated at time of
+                                        publication</span>
+                                </div>
+
+                            </div>
+
+                            <div class="pt-4 pb-4 pr-4 mt-4 border-t border-gray-8 ">
+                                <h6 class="mb-2 text-sm font-semibold text-black">Topics</h6>
+
+                                <ul class="flex flex-wrap gap-2">
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Security</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 hover:bg-teal-7 focus:ring-1 focus:ring-blue-2 inline-flex items-center gap-1.5">
+                                            <span>Security Analysis</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p class="mb-6 text-xl md:text-2xl text-dark-9">The financial sector experienced significant
+                            losses of billions of dollars in 2022, primarily attributed to cyber-attacks targeting major
+                            banks and corporations. One of the key attack strategies that attackers leverage to perform
+                            such high-end cyber-attacks is the control-oriented attack. In control-oriented attacks,
+                            attackers corrupt the control data (e.g., function pointer or return address) to divert the
+                            control-flow of the program to their chosen contents in order to compromise a system.</p>
+
+                        <p class="mb-6 text-xl md:text-2xl text-dark-9">However, with the advancements in
+                            control-oriented defenses in the last few years, especially the advancements made in the
+                            Control-Flow Integrity (CFI) defense, control-oriented attacks have become unreliable. As a
+                            result, attackers shift their focus to another powerful class of attacks called
+                            data-oriented attack. Data-oriented attacks have become popular due to having a similar
+                            level of expressiveness (in terms of achieving malicious goals) like control-oriented
+                            attacks. However, unlike control-oriented attacks, data-oriented attacks do not need to
+                            corrupt the control data. Thus, the CFI defense cannot protect data-oriented attacks which
+                            makes data-oriented attacks very powerful. In data-oriented attacks, attackers manipulate
+                            the non-control data (i.e., variables, objects, and pointers used in a program) to construct
+                            a malicious execution flow of their choice, where the execution flow does not violate the
+                            normal flow of the program. Similar to control-oriented attacks, these attacks can lead to
+                            various security breaches, such as code execution or data leakage.</p>
+
+                        <p class="mb-6 text-xl md:text-2xl text-dark-9">To prevent data-oriented attacks, it is
+                            necessary to protect the integrity of non-control data, similar to the protection of
+                            control-oriented attacks through integrity protection of control-data. However, integrity
+                            protection of non-control data poses two key challenges. First, a program contains a huge
+                            amount of non-control data (~100x more) compared to the control data. Second, the integrity
+                            protection of non-control data requires inter-procedural data-flow analysis,
+                            instrumentation, encryption, masking, etc. which are computationally expensive (run-time
+                            overhead up to 116% for software-based and up to 26% for hardware-based protections). This
+                            high overhead associated with the integrity protection of non-control data makes the
+                            existing countermeasures aiming for data-oriented attacks impractical.</p>
+
+                        <p class="mb-6 text-xl md:text-2xl text-dark-9">In our 2023 USENIX Security paper, we explored
+                            how to make the integrity protection of non-control data practical. The key observation we
+                            made during our work is that not all the non-control data are equally sensitive or critical
+                            to construct data-oriented exploits. Based on this observation, we introduced the idea of
+                            prioritizing non-control data for practical and scalable protection of data-oriented attacks
+                            through protecting only the prioritized non-control data. Out of various non-control data,
+                            data objects and their pointers are often desirable as they allow attackers to leak
+                            information, stitch exploit components together, and perform stack-based or heap-based
+                            exploitation. Consequently, in our work, we propose a framework called Data and Pointer
+                            Prioritization (DPP) for prioritizing data and pointers based on their importance or
+                            vulnerability to attacks. This prioritization enables the capability to ensure the data
+                            integrity where it matters most, as opposed to doing so for all.</p>
+
+                        <p class="mb-6 text-xl md:text-2xl text-dark-9">The prioritization process starts with
+                            identifying attack gateways such as system or library I/O functions that accept external
+                            inputs, and then propagates the inputs throughout a program to identify the other data
+                            objects or pointers that consume those external inputs. This propagation helps us locate
+                            data objects (throughout the program) dependent on potentially attacker-controlled inputs.
+                            To filter out external input dependent, but safe objects (or their pointers), DPP employs a
+                            set of rule-based heuristics, grounded in extensive data from known exploits and CVEs, to
+                            automatically identify sensitive data objects that could potentially lead to
+                            vulnerabilities. DPP then feeds the prioritized data objects and their pointers for
+                            protection. Figure 1 shows the high-level diagram of the abovementioned DPP operations.
+                        </p>
+                    </div>
+
+
+                    <div class=" lg:col-span-9">
+                        <img src="./assets/images/img-5.png" alt="" class="object-contain w-full h-full ">
+                    </div>
+
+                    <div class="lg:col-span-3 lg:pl-12">
+                        <p class="text-sm text-right text-dark-9 font-ibm-serif lg:text-left">
+                            Figure 1: High-level diagram of the DPP framework.</p>
+                    </div>
+
+                    <div class="mt-16 mb-16 lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-7">
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">We implemented a prototype of DPP in LLVM and
+                            evaluated the prototype using various datasets (e.g., Linux Flaw Project and Juliet Test
+                            Suite) as well as the SPEC CPU2017 benchmark. Our evaluation suggests that DPP can ensure
+                            the same level of security as protecting all non-control data, but with protecting only the
+                            prioritized data objects or pointers. We found that as high as 95% of non-control data in
+                            real-world programs may not need protection. DPP also improves performance in terms of
+                            throughput by about 1.6 times and reduces runtime overhead by roughly 70%.</p>
+
+                        <p class="mb-6 text-base lg:text-xl text-dark-9">Our prioritization scheme is new and different
+                            from the conventional protection paradigm as DPP enables the trade-offs between accuracy and
+                            performance. We can make DPP tunable in the security (false negative), usability (false
+                            positive), and performance dimensions. The rules used by DPP are simple and have the
+                            capability to anticipate future attacks. This is because the rules are deduced by
+                            abstracting exploits into common vulnerability patterns. However, DPP still requires some
+                            work and a broader benchmark to fully assess its effectiveness.</p>
+
+
+                    </div>
+
+                    <div class="mb-16 lg:col-start-2 xl:col-start-3 lg:col-span-11 xl:col-span-10">
+                        <a href="#" class="flex items-start justify-between group">
+                            <div class="py-3 border-t-2 sm:w-6/12 lg:w-9/12 border-blue-1 text-blue-1 hover:underline">
+                                <div class="text-xl font-medium lg:w-7/12 lg:text-2xl ">Subscribe to our Future Forward
+                                    newsletter and stay up to date on the latest research news</div>
+
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="mt-6"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                    viewBox="0 0 32 32" aria-hidden="true" class="Ptkl_">
+                                    <path
+                                        d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="w-[120px] lg:w-[180px] h-[120px] lg:h-[180px] bg-blue-1 rounded-full hidden sm:flex items-center justify-center text-sm text-center lg:text-base text-white rotate-[15deg] group-hover:rotate-0 transition-all shrink-0">
+                                <span>Subscribe to our newsletter</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Lsit -->
+
+    <div class="border-t border-gray-8">
+        <div class="container mx-auto w-full max-w-[1584px]">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4">
+                <div
+                    class="flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[302px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden sm:flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[302px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden lg:flex flex-col items-start p-5 border-r border-gray-8 lg:p-8 group  min-h-[302px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden lg:flex flex-col items-start p-5 lg:p-8 group  min-h-[302px] mt-px hover:bg-gray-10 relative">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg focusable="false" class="" preserveAspectRatio="xMidYMid meet"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M12,21H4V4H22v8h2V4a2,2,0,0,0-2-2H4A2,2,0,0,0,2,4V21a2,2,0,0,0,2,2h8Z"></path>
+                            <path
+                                d="M30,28.58l-3.11-3.11a6,6,0,1,0-1.42,1.42L28.58,30ZM22,26a4,4,0,1,1,4-4A4,4,0,0,1,22,26Z">
+                            </path>
+                        </svg>
+                        <p class="text-sm text-dark-9">Explainer</p>
+                    </div>
+
+
+                    <a href="#"
+                        class="block mb-12 text-2xl font-medium text-dark-9 group-hover:underline group-hover:text-blue-1">The
+                        latest AI safety method is a throwback to our maritime past</a>
+
+                    <div class="mt-auto">
+                        <div class="">
+                            <p class="text-sm text-dark-9">Kim Martineau</p>
+                            <p class="mb-4 text-sm text-dark-9">08 Nov 2023</p>
+                        </div>
+
+                        <ul class="flex flex-wrap gap-2 overflow-hidden h-7">
+                            <li>
+                                <span href="#"
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI</span>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <span
+                                    class="px-2 py-1 text-xs transition-all rounded-full text-teal-6 bg-teal-5 inline-flex items-center gap-1.5">
+                                    <span>AI for Code</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black">
+            <div class="container mx-auto w-full max-w-[1584px] px-">
+                <div class="grid grid-cols-2 xl:grid-cols-4">
+                    <div class="">
+                        <button
+                            class="flex items-center w-full gap-2 relative before:content-[''] before:absolute before:w-px before:h-[80%] before:right-0  before:bg-gray-8 p-4 text-left text-white lg:px-8 hover:bg-dark-10 focus:ring-2 focus:ring-blue-1">
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="w-8 shrink-0"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z">
+                                </path>
+                            </svg>
+                            <div class="">
+                                <span class="text-2xl group-hover:underline">Previous</span>
+                                <p class="hidden text-sm text-white sm:block">Resolving the first anti-aromatic carbon
+                                    allotrope</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="xl:col-start-4">
+                        <button
+                            class="flex items-center w-full gap-2 relative before:content-[''] before:absolute before:w-px before:h-[80%] before:left-0  before:bg-gray-8 p-4 text-left text-white  lg:px-8 hover:bg-dark-10 focus:ring-2 focus:ring-blue-1">
+
+                            <div class="">
+                                <span class="text-2xl group-hover:underline">Next</span>
+                                <p class="hidden text-sm text-white sm:block">You need 100 qubits to accelerate
+                                    discovery with quantum
+                                </p>
+                            </div>
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" class="w-8 ml-auto shrink-0"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32"
+                                viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Collapse
+        $('.toggle').click(function (e) {
+            e.preventDefault();
+            let $this = $(this);
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(0);
+            } else {
+
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(0);
+            }
+        });
+    </script>
+</body>
+
+</html>

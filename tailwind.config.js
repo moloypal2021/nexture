@@ -49,6 +49,9 @@ module.exports = {
           6: "#044317",
           7: "#6fdc8c",
         },
+        pink: {
+          1: "#d946ef",
+        },
       },
       fontSize: {
         13: "13px",
@@ -68,6 +71,7 @@ module.exports = {
       fontFamily: {
         ibm: ["IBM Plex Sans", "sans-serif"],
         "ibm-serif": ["IBM Plex Serif", "serif"],
+        graphik: ["Graphik", "sans-serif"],
       },
     },
   },

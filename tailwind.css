@@ -2,13 +2,92 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+/* Global css styling for header/navbar and footer +
+Define the 'Graphik' font family with different weights */
+
+/* Thin (font-weight: 100) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Thin"), local("Graphik-Thin"),
+    url("../fonts/Graphik-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Extra Light (font-weight: 200) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Extralight"), local("Graphik-Extralight"),
+    url("../fonts/Graphik-Extralight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light (font-weight: 300) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Light"), local("Graphik-Light"),
+    url("../fonts/Graphik-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular (font-weight: 400) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Regular"), local("Graphik-Regular"),
+    url("../fonts/Graphik-Regular.woff2") format("woff2");
+  font-weight: normal;
+  /* You can omit this line as 'normal' is the default */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium (font-weight: 500) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Medium"), local("Graphik-Medium"),
+    url("../fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Semibold (font-weight: 600) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Semibold"), local("Graphik-Semibold"),
+    url("../fonts/Graphik-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black (font-weight: 900) */
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik Black"), local("Graphik-Black"),
+    url("../fonts/Graphik-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Graphik", sans-serif;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-ibm;
+    @apply font-graphik;
   }
 }
 
